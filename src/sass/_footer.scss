@@ -1,0 +1,125 @@
+.footer {
+  background: $main-color;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  padding: 30px;
+  display: flex;
+  @media screen and (max-width: $max-mobile-width) {
+    flex-direction: column;
+    gap: 50px;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px;
+    gap: 40px;
+  }
+  @media screen and (min-width: 801px) {
+  }
+}
+
+.footer-contacts {
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 35px;
+  }
+}
+
+.footer-contacts,
+.footer-socials,
+.footer-location {
+  @media screen and (min-width: $breakpoint-tablet) {
+    // margin: auto;
+  }
+}
+
+.footer-header {
+  color: $secondary-color;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  // margin-bottom: 30px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.footer-list-item {
+  color: $secondary-color;
+}
+
+.footer-list-contacts-item-link {
+  // font-size: 14px;
+  // line-height: 1.2;
+  color: $secondary-color;
+}
+
+.footer-list-location-item {
+  @media screen and (max-width: $max-mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.footer-list-location-item-text {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+}
+
+.footer-list-location-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-list-location-item:last-child {
+  @media screen and (max-width: $max-mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.footer-list-location-item-link {
+  display: inline-block;
+  justify-content: center;
+  color: $main-color;
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  border: $tertiary-color solid 1px;
+  border-radius: 8px;
+  text-decoration: none;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 15px 25px;
+    border-radius: 13px;
+  }
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+  margin: auto;
+}
+
+.social-list-item-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.social-list-item-link-icon {
+  color: $main-color;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.social-list-item-link-icon-insta {
+  transform: scale(1.15); /* Adjust this percentage until it looks right */
+  transform-origin: center;
+}
